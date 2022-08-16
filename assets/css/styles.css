@@ -1,26 +1,38 @@
 /* 
 font-family: 'Cinzel', serif;
 font-family: 'Comfortaa', cursive;  
+
+colors
+pinky: #e5bcac
+greeny: #aea787
+gold: #dcb74e
+grey: #787878
+beige: #ead6b8
 */
 
 html, body {
+
+    margin: 0;
+    padding: 0;
+}
+
+.whole-page {
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: #fff;
     width: 100vw;
     gap: 0;
-    margin: 0;
-    padding: 0;
 }
 
 .nav {
     z-index: 10;
 }
 
-main {
+.main-content {
     display: flex;
-    z-index: 5;
+    flex-direction: column;
+    position: relative;
 }
 
 button {
@@ -34,26 +46,30 @@ button {
 } /* just checking somehting */
 
 h1 {
-    font-family: 'Cinzel';
-    font-weight: 300;
+    font-family: 'Cinzel', serif;
+    font-size: 5vw;
+    font-weight: normal;
+    text-align: center;
+    color: #D8B048;
 }
 
 h2 {
     color: #D8B048;
     font-family: 'Cinzel','Georgia';
-    font-weight: 300;
+    font-weight: normal;
     font-size: 30px;
 }
 
 h3 {
     font-weight: normal;
-    font-size: 22px;
+    font-size: 3vw;
     font-family: 'Garamond', serif;
     font-style: italic;
+    color: #aea787;
 }
 
 h4 {
-    font-family: 'Gill Sans', 'Geneva', sans-serif;
+    font-family: 'Comfortaa', cursive;  
     text-transform: uppercase;
     color: #C89687;
     font-size: 18px;
@@ -61,14 +77,9 @@ h4 {
 }
 
 p {
-    font-family: 'Garamond';
+    font-family: 'Comfortaa', cursive;  
     font-size: 16px;
-    color: #545454;
+    color: #787878;
 }
 /* Body stuff https://www.freecodecamp.org/news/html-button-type-how-to-add-buttons-to-your-website/ */
 
-@media all and (max-width: 680px){
-    main {
-        padding-top: 0px;
-    }
-}
