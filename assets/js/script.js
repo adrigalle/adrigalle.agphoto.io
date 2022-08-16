@@ -22,7 +22,7 @@ fetch('header.html')
 
 /* footer stuff, basically same as above */
 function myFooterFunction() {
-  var x = document.getElementById("myfooter");
+  var x = document.getElementById("myFooter");
   if (x.className === "footer") {
     x.className += " responsive";
   } else {

@@ -30,13 +30,125 @@ grey: #787878
 beige: #ead6b8
 */
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.instagram {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background: #b39082c7;
+}
+.insta-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.insta-content h4 {
+    font-size: 3vw;
+    letter-spacing: 0.1em;
+    margin: 0;
+    backdrop-filter: blur(5px); /* adds blur to everything behind it */
+    font-family: 'Comfortaa', cursive; 
+    padding: 8px;
+}
+.insta-content h4 span {
+  border: 2px solid white;
+  padding: 10px 14px 6px;
+  display: inline-block;
+}
+
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.footer .last-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 5px;
+}
+
+.footer-list .list-item a {
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive; 
+    color: #e5bcac;
+}
+
 </style>
 
-    </head>
+</head>
 
 
 
-    <body>
+<body class="footer" id="myFooter">
 
-    </body>
+<!-- instagram part like a hero image type of thing-->
+<div class="instagram">
+    <img src="images/combos/instagram-footer.png" alt="instagram collage from AG Photography etc" style="width: 100vw; opacity: 0.6;"/>
+    <div class="insta-content">
+        <h4 style="color: white;">
+            <span>Follow on Instagram</span>
+        </h4>
+    </div>
+</div>
+
+<div class="bottom">
+    <!-- first little part with info -->
+    <div class="section1">
+
+    </div>
+
+    <!-- logo -->
+    <div class="middle-section">
+
+    </div>
+
+    <!-- pages -->
+    <div class="last-section">
+        <ul class="footer-list">
+            <li class="list-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="list-item">
+                <a href="#">About me</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Services</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Gallery</a>
+            </li>
+            <li class="list-item">
+                <a href="#">FAQ's</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
 </html>
