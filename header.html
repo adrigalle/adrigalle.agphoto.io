@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <script src="assets/js/script.js"></script>
+        <link rel="home" href="https://adrigalle.github.io/index.html">
+        <link rel="all-projects" href="https://adrigalle.github.io/all-projects/">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+    
+        <!-- Google Fonts: Comfortaa and Cinzel -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Comfortaa&display=swap" rel="stylesheet">
+        <!-- 
+        font-family: 'Cinzel', serif;
+        font-family: 'Comfortaa', cursive; 
+        -->
+    </head>
+    
+    <!--
+        colors
+        pinky: #e5bcac
+        greeny: #aea787
+        gold: #dcb74e
+        grey: #787878
+        beige: #ead6b8
+    -->
+    
+    <!-- do styles for nav bar and footer in same thing to keep it separated -->
+    <style>
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+    
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: 1px solid #e5bcac;
+        border-bottom: 1px solid #e5bcac;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        flex: 1;
+    }
+    
+    .nav-list {
+        list-style-type: none;
+        width: auto;
+        padding: 0; /* default is right padding 40px wtf */
+    }
+    .nav-list .list-item {
+        display: inline-block;
+    }
+    
+    .topnav a {
+        text-decoration: none;
+        font-family: 'Comfortaa', cursive; 
+        text-transform: uppercase;
+        font: 16px;
+        color: #e5bcac;
+    
+        -webkit-transition: color 50ms;
+        -moz-transition:    color 50ms;
+        -ms-transition:     color 50ms;
+        -o-transition:      color 50ms;
+        transition:         color 50ms;
+    }
+    .topnav a:hover {
+        color: #cca799;
+    }
+    .menu-icon, .icon-logo {
+        display: none;
+    }
+    .topnav .menu-line {
+        width: 20px;
+        height: 3px;
+        background-color: #e5bcac;
+        margin-bottom: 4px;
+        border-radius: 20px;
+    }
+    
+    
+    
+    /* hiding topnav when screen is smaller and showing logo and hamburger */
+    @media all and (max-width: 680px) {
+        .topnav {
+            border: none;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+        .icon-logo  {
+            display: block;
+            position: absolute;
+            left: 8px;
+            top: 15px;
+            padding-left: 0;
+        }
+        .menu-icon {
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+        .nav-list {
+            list-style-type: none;
+            width: 100%;
+            text-align: center;
+            padding-top: 30px;
+            display: none;
+        }
+        .nav-list .list-item {
+            font-size: 14px;
+            display: block;
+            padding: 4px;
+        }
+        .nav-list .divider {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    }
+    
+    
+    </style>
+    
+    <body class="header" id="myHeader">
+    
+    <!-- logo header thing -->
+    
+    
+    <!-- actual nav-bar -->
+    <nav class="topnav">
+    
+        <div>
+            <a class="icon-logo" href="index.html">LOGO</a>
+        </div>
+    
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+                <a href="#" >About Me</a>
+            </li>
+            <li class="list-item">
+                <a class="divider">|</a>
+            </li>
+            <li class="list-item">
+                <a href="#" >Services</a>
+            </li>
+            <li class="list-item">
+                <a class="divider">|</a>
+            </li>
+            <li class="list-item">
+                <a href="#" >Gallery</a>
+            </li>
+            <li class="list-item">
+                <a class="divider">|</a>
+            </li>
+            <li class="list-item">
+                <a href="#" >FAQ's</a>
+            </li>
+            <li class="list-item">
+                <a class="divider">|</a>
+            </li>
+            <li class="list-item">
+                <a href="#" >Tips</a>
+            </li>
+            <li class="list-item">
+                <a class="divider">|</a>
+            </li>
+            <li class="list-item">
+                <a href="#" >Contact</a>
+            </li>
+        </ul>
+    
+    
+    
+        <div class="menu-icon" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    
+    </nav>
+    
+    </body>
+    
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const naviList = document.getElementById('navi-list');
+    
+        toggleButton.addEventListener('click', () => {
+            naviList.classList.toggle('active');
+        })
+    </script>
+
+</html>
