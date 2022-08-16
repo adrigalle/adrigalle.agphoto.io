@@ -57,9 +57,20 @@ beige: #ead6b8
         top: 0;
         z-index: 10;
         flex: 1;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.664);
     }
     
     .nav-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex: 1 0 10px; 
+        /* 
+        how it will grow and shrink, 
+        <flex-grow> <flex-shrink> <flex-basis>
+        1-grow-with-page 0-no-grow-with-page 10px-min-gap-basically 
+        more info: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+        */
         list-style-type: none;
         width: auto;
         padding: 0; /* default is right padding 40px wtf */
@@ -100,24 +111,24 @@ beige: #ead6b8
     /* hiding topnav when screen is smaller and showing logo and hamburger */
     @media all and (max-width: 680px) {
         .topnav {
-            border: none;
             flex-direction: column;
             position: fixed;
             top: 0;
             z-index: 10;
+            height: 40px;
         }
         .icon-logo  {
             display: block;
             position: absolute;
             left: 8px;
-            top: 15px;
+            top: 10px;
             padding-left: 0;
         }
         .menu-icon {
             display: block;
             position: absolute;
             right: 15px;
-            top: 15px;
+            top: 10px;
         }
         .nav-list {
             list-style-type: none;
