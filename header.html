@@ -154,77 +154,74 @@ beige: #ead6b8
 </style>
 
 </head>
-    
+
+<body class="header" id="myHeader">
+
+<!-- logo header thing -->
 
 
+<!-- actual nav-bar -->
+<nav class="topnav">
+
+    <div>
+        <a class="icon-logo" href="index.html">LOGO</a>
+    </div>
+
+    <ul class="nav-list" id="navi-list">
+        <li class="list-item">
+            <a href="#" >About Me</a>
+        </li>
+        <li class="list-item">
+            <a class="divider">|</a>
+        </li>
+        <li class="list-item">
+            <a href="#" >Services</a>
+        </li>
+        <li class="list-item">
+            <a class="divider">|</a>
+        </li>
+        <li class="list-item">
+            <a href="#" >Gallery</a>
+        </li>
+        <li class="list-item">
+            <a class="divider">|</a>
+        </li>
+        <li class="list-item">
+            <a href="#" >FAQ's</a>
+        </li>
+        <li class="list-item">
+            <a class="divider">|</a>
+        </li>
+        <li class="list-item">
+            <a href="#" >Tips</a>
+        </li>
+        <li class="list-item">
+            <a class="divider">|</a>
+        </li>
+        <li class="list-item">
+            <a href="#" >Contact</a>
+        </li>
+    </ul>
+
+
+
+    <div class="menu-icon" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+
+</nav>
+
+</body>
     
-    <body class="header" id="myHeader">
-    
-    <!-- logo header thing -->
-    
-    
-    <!-- actual nav-bar -->
-    <nav class="topnav">
-    
-        <div>
-            <a class="icon-logo" href="index.html">LOGO</a>
-        </div>
-    
-        <ul class="nav-list" id="navi-list">
-            <li class="list-item">
-                <a href="#" >About Me</a>
-            </li>
-            <li class="list-item">
-                <a class="divider">|</a>
-            </li>
-            <li class="list-item">
-                <a href="#" >Services</a>
-            </li>
-            <li class="list-item">
-                <a class="divider">|</a>
-            </li>
-            <li class="list-item">
-                <a href="#" >Gallery</a>
-            </li>
-            <li class="list-item">
-                <a class="divider">|</a>
-            </li>
-            <li class="list-item">
-                <a href="#" >FAQ's</a>
-            </li>
-            <li class="list-item">
-                <a class="divider">|</a>
-            </li>
-            <li class="list-item">
-                <a href="#" >Tips</a>
-            </li>
-            <li class="list-item">
-                <a class="divider">|</a>
-            </li>
-            <li class="list-item">
-                <a href="#" >Contact</a>
-            </li>
-        </ul>
-    
-    
-    
-        <div class="menu-icon" id="toggle-button">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-        </div>
-    
-    </nav>
-    
-    </body>
-    
-    <script>
-        const toggleButton = document.getElementById('toggle-button');
-        const naviList = document.getElementById('navi-list');
-    
-        toggleButton.addEventListener('click', () => {
-            naviList.classList.toggle('active');
-        })
-    </script>
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+</script>
 
 </html>
