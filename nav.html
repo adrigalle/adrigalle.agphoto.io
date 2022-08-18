@@ -1,8 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <script src="assets/js/script.js"></script>
-    <link rel="home" href="https://adrigalle.github.io/index.html">
-    <link rel="all-projects" href="https://adrigalle.github.io/all-projects/">
+    <script src="assets/js/nav.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
@@ -111,7 +110,7 @@ beige: #ead6b8
     /* hiding topnav when screen is smaller and showing logo and hamburger */
     @media all and (max-width: 680px) {
         .topnav {
-            flex-direction: column;
+
             position: fixed;
             top: 0;
             z-index: 10;
@@ -129,13 +128,16 @@ beige: #ead6b8
             position: absolute;
             right: 15px;
             top: 10px;
+            z-index: 15;
         }
         .nav-list {
             list-style-type: none;
             width: 100%;
-            text-align: center;
-            padding-top: 30px;
+            flex-direction: column;
+            padding-top: 236px;
             display: none;
+            justify-content: flex-end;
+            align-items: center;
         }
         .nav-list .list-item {
             font-size: 14px;
@@ -146,7 +148,7 @@ beige: #ead6b8
             display: none;
         }
         .active {
-            display: block;
+            display: flex;
         }
     }
     

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
     <script src="assets/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
@@ -19,11 +21,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 
-<body class="whole-page">
-    <!-- navigation bar -->
-    <div class="nav">
-        <script id="replace_with_header" src="assets/js/script.js"></script>
+<header>
+    <!-- navigation bar for not putting it fully till learn react -->
+<nav class="topnav">
+
+    <div>
+        <a class="icon-logo" href="index.html">LOGO</a>
     </div>
+
+    <ul class="nav-list" id="navi-list">
+        <li class="list-item">
+            <a href="#" >About Me</a>
+        </li>
+        <li class="list-item">
+            <a class="divider">|</a>
+        </li>
+        <li class="list-item">
+            <a href="#" >Services</a>
+        </li>
+        <li class="list-item">
+            <a class="divider">|</a>
+        </li>
+        <li class="list-item">
+            <a href="#" >Gallery</a>
+        </li>
+        <li class="list-item">
+            <a class="divider">|</a>
+        </li>
+        <li class="list-item">
+            <a href="#" >FAQ's</a>
+        </li>
+        <li class="list-item">
+            <a class="divider">|</a>
+        </li>
+        <li class="list-item">
+            <a href="#" >Tips</a>
+        </li>
+        <li class="list-item">
+            <a class="divider">|</a>
+        </li>
+        <li class="list-item">
+            <a href="#" >Contact</a>
+        </li>
+    </ul>
+
+
+
+    <div class="menu-icon" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+
+</nav>
+</header>
+
+<body class="whole-page">
 
     <main class="main-content">
         <h3>Central Valley photographer</h3>
@@ -59,3 +112,13 @@
 <div>
     <script id="replace_with_footer" src="assets/js/script.js"></script>
 </div>
+</html>
+
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+</script>
