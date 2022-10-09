@@ -1,124 +1,152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <script src="assets/js/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="header" href="header.html">
-    <link rel="footer" href="footer.html">
+  <title></title>
 
-    <!-- meta SEO info -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8" />
-    <title>AG Photography etc | Family Portrait Photographer</title>
-    <meta name="keywords" content="photographer, family portraits, senior photography, Stanislaus County photos">
-    <meta name="description" content="AG Photography etc provides photo sessions in Stanislaus County, California. This includes Modesto, Ceres, Turlock, Salida, Ripon, and more!">
-    <meta name="author" content="AG Photography etc">
-    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico"> <!-- for when I get this bish -->
+  <!-- CSS & java -->
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="index.js"></script>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- Google Fonts: Comfortaa and Cinzel -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Google Fonts: Comfortaa and Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Comfortaa&display=swap" rel="stylesheet">
+
+
 </head>
 
-<header>
-    <!-- navigation bar for not putting it fully till learn react -->
+ 
+<body>
+
+<!-- ------------------ NAVBAR ------------------ -->
+<div class="topnav">
+<!-- actual nav-bar -->
 <nav class="topnav">
 
-    <div>
-        <a class="icon-logo" href="index.html">LOGO</a>
-    </div>
+  <div>
+      <a class="icon-logo" href="index.html">LOGO</a>
+  </div>
 
-    <ul class="nav-list" id="navi-list">
-        <li class="list-item">
-            <a href="#" >About Me</a>
-        </li>
-        <li class="list-item">
-            <a class="divider">|</a>
-        </li>
-        <li class="list-item">
-            <a href="#" >Services</a>
-        </li>
-        <li class="list-item">
-            <a class="divider">|</a>
-        </li>
-        <li class="list-item">
-            <a href="#" >Gallery</a>
-        </li>
-        <li class="list-item">
-            <a class="divider">|</a>
-        </li>
-        <li class="list-item">
-            <a href="#" >FAQ's</a>
-        </li>
-        <li class="list-item">
-            <a class="divider">|</a>
-        </li>
-        <li class="list-item">
-            <a href="#" >Tips</a>
-        </li>
-        <li class="list-item">
-            <a class="divider">|</a>
-        </li>
-        <li class="list-item">
-            <a href="#" >Contact</a>
-        </li>
-    </ul>
+  <ul class="nav-list">
+      <li class="list-item">
+        <a href="#/home" >Home</a>
+      </li>
+      <li class="list-item">
+          <a href="#/about" >About Me</a>
+      </li>
+      <li class="list-item">
+          <a href="#/services" >Services</a>
+      </li>
+      <li class="list-item">
+          <a href="#/gallery" >Gallery</a>
+      </li>
+      <li class="list-item">
+          <a href="#/faqs" >FAQ's</a>
+      </li> <!--
+      <li class="list-item">
+          <a href="#" >Tips</a>
+      </li> -->
+      <li class="list-item">
+          <a href="#/contact" >Contact</a>
+      </li>
+  </ul>
 
 
 
-    <div class="menu-icon" id="toggle-button">
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-    </div>
+  <div class="menu-icon" id="toggle-button">
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+  </div>
 
 </nav>
-</header>
-
-<body class="whole-page">
-
-    <main class="main-content">
-        <h3>Central Valley photographer</h3>
-        <h1>everyday family life stages</h1>
-    
-        <!-- Work with me button -->
-        <a href="url"><button>Work with me</button></a>
-    
-    
-        <!-- Me intro -->
-        <h2>Welcome to my page!</h2>
-        <p>Like having beautiful background sceneries that fuel you and your kids' energy? Well you are in luck! I am a natural light photographer that edits in a light and vibrant style. <br>
-            <br>
-            I service families of all sizes, couples, and portraits of your children through their biggest milestones in life.<br>
-            <br> 
-            If you are wanting pictures anywhere in Modesto, Ceres, Turlock, Ripon (basically Stanislaus County and surrounding counties) I'm your gal!</p>
-    
-        <!-- parter thing with picture in the background -->
-        <h3 style="color:#AEA787; text-align: center;">AG Photography etc helps you capture beautiful picture and keeps everyone having stress-free fun</h3>
-        <h4 style="text-align: center;">It can be a family of 2 or 7!</h4>
-    
-        <p>bout to hopefully fix all this and make it gorgeous! testing</p>
-    </main>
-
-</body>
 
 
-
-
-
-
-<!-- footer bar -->
-<div>
-    <script id="replace_with_footer" src="assets/js/script.js"></script>
-</div>
-</html>
-
+  
 <script>
-    const toggleButton = document.getElementById('toggle-button');
-    const naviList = document.getElementById('navi-list');
+  const toggleButton = document.getElementById('toggle-button');
+  const naviList = document.getElementById('navi-list');
 
-    toggleButton.addEventListener('click', () => {
-        naviList.classList.toggle('active');
-    })
+  toggleButton.addEventListener('click', () => {
+      naviList.classList.toggle('active');
+  })
 </script>
+</div>
+
+
+
+
+
+<div class="container" style="margin-top: 20px">
+
+  <div id="content"></div>
+
+</div>
+
+
+
+
+
+<!-- ------------------ FOOTER ------------------ -->
+<div class="footer">
+
+  <!-- instagram part like a hero image type of thing-->
+  <div class="instagram">
+      <img src="images/combos/instagram-970x90.png" alt="instagram collage from AG Photography etc" style="width: 100vw; opacity: 0.6;"/>
+      <div class="insta-content">
+          <h4 style="color: white;">
+              <span>Follow on Instagram</span>
+          </h4>
+      </div>
+  </div>
+  
+  <div class="bottom">
+      <!-- first little part with info -->
+      <div class="first-section" style="text-align: center;">
+        <p>Photographing families and portraits in the Central Valley, CA area!</p>
+        <p>907.978.8659</p>
+        <p>AG.Photography.etc@gmail.com</p>
+      </div>
+  
+      <!-- logo -->
+      <div class="middle-section">
+        <h3>find your way around</h3>
+        <ul class="footer-list">
+            <li class="list-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="list-item">
+                <a href="#">About me</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Services</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Gallery</a>
+            </li>
+            <li class="list-item">
+                <a href="#">FAQ's</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+  
+      </div>
+  
+      <!-- pages -->
+      <div class="last-section">
+          <img src="/images/logos/Color-circ.png" style="width: 200px;"/>
+      </div>
+  </div>
+
+  
+</div>
+</body>
+</html>
