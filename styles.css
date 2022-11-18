@@ -95,14 +95,15 @@ p {
     overflow: hidden; 
     position: relative; 
     width: 100%; 
-    height: 100%; 
-    background-image: url('images/families/DSC07951.jpg'); 
+    background-image: url('images/my-family/DSC00334-Edit.jpg'); 
+    box-shadow: inset 0 0 0 1000px #ffffff75;
     background-attachment: fixed; 
     background-size: cover; 
     -moz-background-size: cover; 
     -webkit-background-size: cover; 
     background-repeat: no-repeat; 
     background-position: top center;
+    text-align: center;
 }
 
 .parallax-home-two {
@@ -112,12 +113,19 @@ p {
     position: relative; 
     width: 100%; 
     background-image: url('images/scenes/DSC02443.jpg'); 
+    box-shadow: inset 0 0 0 1000px #ffffffb4;
     background-attachment: fixed; 
     background-size: cover; 
     -moz-background-size: cover; 
     -webkit-background-size: cover; 
     background-repeat: no-repeat; 
     background-position: top center;
+    
+}
+.hero-image {
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.4);
+    padding: 20px 20px;
 }
 .block {
     background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;
