@@ -394,7 +394,7 @@ beige: #ead6b8
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    max-width: 300px;
 }
 .footer .last-section {
     display: flex;
@@ -409,6 +409,7 @@ beige: #ead6b8
     padding: 0;
     gap: 10px;
     flex-wrap: wrap;
+
 }
 
 .footer-list .list-item a {
