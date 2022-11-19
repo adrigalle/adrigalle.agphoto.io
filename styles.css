@@ -35,7 +35,8 @@ header {
     border: none;
     text-align: center;
     border-radius: 5px;
-    padding: 5px 8px;
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
 }
 .buttn:hover {
     background-color: #a19b80;
@@ -286,6 +287,9 @@ beige: #ead6b8
     justify-content:space-evenly;
     gap: 20px;
 }
+}
+.navbar {
+    --bs-navbar-color: rgb(233, 233, 233);
 }
 
 
