@@ -59,6 +59,7 @@ h2 {
     font-family: 'Cinzel','Georgia';
     font-weight: normal;
     font-size: 30px;
+    text-align: center;
 }
 
 h3 {
@@ -82,6 +83,17 @@ p {
     font-family: 'Comfortaa', cursive;  
     font-size: 16px;
     color: #787878;
+}
+
+
+/* ***************************** Logo Header ***************************** */
+.logo-header img {
+    width: 60vw;
+    height: auto;
+    padding: 10px;
+}
+.logo-header {
+    text-align: center;
 }
 
 
@@ -128,12 +140,30 @@ p {
     padding: 20px 20px;
 }
 .block {
-    background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;
+    background: white; 
+    padding: 60px; 
+    width:820px; 
+    margin:0 auto; 
+    text-align:justify;
 }
 @media screen and (max-width: 959px) and (min-width: 768px) {
-    .block {padding: 40px; width:80%;}}
+    .block {padding: 40px; width:80%;}
+}
 @media screen and (max-width: 479px) {
-    .block {padding: 30px 15px; width:80%;}}
+    .block {padding: 30px 15px; width:80%;}
+}
+.line-break {
+    border-bottom: 1px solid #e5bcac; 
+    width: 150px; 
+    margin: 0 auto;
+}
+.flex-row-container {
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px;
+    justify-content: space-between;
+}
+
 
 
 
@@ -157,6 +187,42 @@ gold: #dcb74e
 grey: #787878
 beige: #ead6b8
 */
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, 0.541) !important;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid #e5bcac;
+    border-bottom: 1px solid #e5bcac;
+}
+.navbar-toggler {
+    margin-left: auto;
+    margin-right: 5px;
+    border: none;
+}
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive; 
+    text-transform: uppercase;
+    font: 16px;
+    color: #e5bcac;
+}
+.nav-item a {
+    color: #e5bcac;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-collapse {
+    justify-content:space-evenly;
+    gap: 20px;
+}
+}
+
+
 
 
 * {
