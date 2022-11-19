@@ -85,16 +85,6 @@ p {
     font-size: 16px;
     color: #787878;
 }
-a:visited {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:hover {
-color: red;
-background-color: transparent;
-text-decoration: underline;
-}
 
 
 /* ***************************** Logo Header ***************************** */
@@ -291,138 +281,22 @@ beige: #ead6b8
 .navbar {
     --bs-navbar-color: rgb(233, 233, 233);
 }
-
-
-
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+.btn-light {
+    background-color: transparent;
+    border: none;
 }
-
-.header {
-    display: flex;
-    justify-content: center;
-    font-family: sans-serif;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.fixed-bottom {
+    left: auto;
 }
-
-.topnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-top: 1px solid #e5bcac;
-    border-bottom: 1px solid #e5bcac;
-    align-items: center;
-    width: 100%;
-    padding: 5px 0;
-    z-index: 10;
-    flex: 1;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.664);
+.go-up {
+    text-decoration: none; 
+    color: #787878; 
+    background-color: rgba(255, 255, 255, 0.623);
 }
-
-.nav-list {
-    display: flex;
-    justify-content: space-evenly;
-    flex: 1 0 10px; 
-    /* 
-    how it will grow and shrink, 
-    <flex-grow> <flex-shrink> <flex-basis>
-    1-grow-with-page 0-no-grow-with-page 10px-min-gap-basically 
-    more info: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
-    */
-    list-style-type: none;
-    width: auto;
-    padding: 0; /* default is right padding 40px wtf */
-    margin-bottom: 0; /* default was 1em looked gross */
+.go-up:hover {
+    background-color: #78787854;
+    color: white;
 }
-.nav-list .list-item {
-    display: inline-block;
-}
-
-.topnav a {
-    text-decoration: none;
-    font-family: 'Comfortaa', cursive; 
-    text-transform: uppercase;
-    font: 16px;
-    color: #e5bcac;
-
-    -webkit-transition: color 50ms;
-    -moz-transition:    color 50ms;
-    -ms-transition:     color 50ms;
-    -o-transition:      color 50ms;
-    transition:         color 50ms;
-}
-.topnav a:hover {
-    color: #cca799;
-}
-.menu-icon, .icon-logo {
-    display: none;
-}
-.topnav .menu-line {
-    width: 20px;
-    height: 3px;
-    background-color: #e5bcac;
-    margin-bottom: 4px;
-    border-radius: 20px;
-}
-
-/* hiding topnav when screen is smaller and showing logo and hamburger */
-@media all and (max-width: 680px) {
-    .topnav {
-
-        position: fixed;
-        top: 0;
-        z-index: 10;
-        height: 40px;
-    }
-    .icon-logo  {
-        display: block;
-        position: absolute;
-        left: 8px;
-        top: 10px;
-        padding-left: 0;
-    }
-    .menu-icon {
-        display: block;
-        position: absolute;
-        right: 15px;
-        top: 10px;
-        z-index: 15;
-    }
-    .nav-list {
-        list-style-type: none;
-        width: 100%;
-        flex-direction: column;
-        padding-top: 236px;
-        display: none;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .nav-list .list-item {
-        font-size: 14px;
-        display: block;
-        padding: 4px;
-    }
-    .nav-list .divider {
-        display: none;
-    }
-    .active {
-        display: flex;
-    }
-}
-
-
-
-
-
-
-
-
 
 
 
