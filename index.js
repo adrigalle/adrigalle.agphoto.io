@@ -1,12 +1,13 @@
 var routes = {
-    '':          'home.html',     
-    '/':         'home.html',
-    '#/home':    'home.html',                        
-    '#/about':    'about.html',
-    '#/gallery': 'gallery.html',
-    '#/faqs': 'faqs.html',
-    '#/contact': 'contact.html',
-    '#/services': 'services.html',
+    '':             'home.html',     
+    '/':            'home.html',
+    '#':            'home.html',
+    '#/home':       'home.html',                        
+    '#/about':      'about.html',
+    '#/gallery':    'gallery.html',
+    '#/faqs':       'faqs.html',
+    '#/contact':    'contact.html',
+    '#/services':   'services.html',
 };
 
 async function router(){
