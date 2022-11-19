@@ -90,6 +90,7 @@ p {
 /* ***************************** Logo Header ***************************** */
 .logo-header img {
     width: 60vw;
+    max-width: 600px;
     height: auto;
     padding: 10px;
 }
