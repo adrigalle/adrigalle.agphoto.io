@@ -2,11 +2,13 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
 }
 .container {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+    --bs-gutter-x: 0px;
 }
 
 .whole-page {
@@ -15,19 +17,13 @@ html, body {
     flex-direction: column;
     background-color: #fff;
     width: 100vw;
-    gap: 0;
 }
 
-header {
-    z-index: 10;
-    position: relative;
-} 
 .main-content {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100vw;
-    margin-right: 0;
 }
 
 
@@ -91,6 +87,9 @@ p {
 img {
     pointer-events: none;
 }
+section {
+    width: 100vw;
+}
 
 
 
@@ -139,12 +138,14 @@ img {
     }
   }
 
+
 .parallax-home-one {
     padding-top: 200px; 
     padding-bottom: 200px; 
     background-image: url('images/my-family/DSC00334-Edit.jpg'); 
     box-shadow: inset 0 0 0 1000px #ffffff75;
     text-align: center;
+    width: 100%;
 }
 .parallax-home-two {
     padding-top: 40px; 
@@ -176,7 +177,9 @@ img {
 .hero-image {
     backdrop-filter: blur(5px);
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.4);
-    padding: 20px 20px;
+    padding: 40px 40px;
+    width: max-content;
+    margin: auto;
 }
 .block {
     padding: 60px; 
@@ -230,6 +233,7 @@ img {
 .card {
     border: none;
     border-radius: none;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 .card-footer {
     background-color: transparent;
