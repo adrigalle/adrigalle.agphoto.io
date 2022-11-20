@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 .container {
     margin-left: 0;
@@ -131,6 +132,11 @@ img {
     background-repeat: no-repeat; 
     background-position: top center;
 }
+@media only screen and (max-device-width: 1000px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
 
 .parallax-home-one {
     padding-top: 200px; 
@@ -235,18 +241,10 @@ img {
 .card-group {
     flex-wrap: wrap;
 }
-.card-testimonials {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    padding: 16px 0px;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+
 .scrolling-wrapper{
 	overflow-x: auto;
+    align-items: center;
 }
 
 
