@@ -251,6 +251,19 @@ section {
 
 
 
+.accordion-button:not(.collapsed) {
+    color: #ead6b8;
+    background-color: #f7eee1;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #aea787;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #aea78748;
+}
+
+
+
 
 
 
