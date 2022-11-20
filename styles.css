@@ -239,9 +239,6 @@ img {
     font-family: 'Comfortaa', cursive; 
     font-size: smaller;
 }
-.card-group {
-    flex-wrap: wrap;
-}
 
 .scrolling-wrapper{
 	overflow-x: auto;
