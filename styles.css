@@ -175,6 +175,7 @@ section {
     text-align: center;
 }
 .hero-image {
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.4);
     padding: 40px 40px;
@@ -218,6 +219,8 @@ section {
     width: 370px;
     text-align: center;
     margin: auto;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 .contact-form a {
     color: #787878;
@@ -379,6 +382,7 @@ beige: #ead6b8
 .bg-light {
     --bs-bg-opacity: 1;
     background-color: rgba(255, 255, 255, 0.541) !important;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     border-top: 1px solid #e5bcac;
     border-bottom: 1px solid #e5bcac;
