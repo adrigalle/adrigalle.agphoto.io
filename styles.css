@@ -518,7 +518,7 @@ beige: #ead6b8
     list-style-type: none;
     align-items: center;
     padding: 0;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
 
 }
