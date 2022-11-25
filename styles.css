@@ -223,7 +223,8 @@ a {
 .contact-form {
     background-color: rgba(255, 255, 255, 0.76);
     padding: 20px;
-    width: 370px;
+    width: 40vw;
+    min-width: 380px;
     text-align: center;
     margin: auto;
 }
