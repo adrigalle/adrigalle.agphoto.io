@@ -255,7 +255,7 @@ a {
 .card {
     border: none;
     border-radius: none;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    box-shadow: rgba(150, 150, 150, 0.25) 0px 0.0625em 0.0625em, rgba(133, 133, 133, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 .card-footer {
     background-color: transparent;
