@@ -251,6 +251,13 @@ a {
 
 
 
+
+
+
+
+
+
+
 /*  *****************************   CARDS ************************************** */
 .card {
     border: none;
@@ -283,6 +290,9 @@ a {
     outline: 0;
     box-shadow: 0 0 0 0.25rem #aea78748;
 }
+
+
+
 
 
 
@@ -427,12 +437,15 @@ beige: #ead6b8
 .nav-item a:hover {
     background: radial-gradient(#ffffffa1, 40%, #ffffff00);
 }
-
-@media (min-width: 992px) {
-.navbar-expand-lg .navbar-collapse {
-    justify-content:space-evenly;
-    gap: 20px;
+.navbar-light .navbar-toggler {
+    color: #e5bcac70;
+    border-color: #e5bcac70;
 }
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content:space-evenly;
+        gap: 20px;
+    }
 }
 .navbar {
     --bs-navbar-color: rgb(233, 233, 233);
