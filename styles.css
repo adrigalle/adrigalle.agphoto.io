@@ -220,6 +220,13 @@ a {
     .flex-row-container {flex-direction: column;}
     .flex-row-container .me-pics {width: 100vw; height: auto;}
 }
+
+
+
+
+
+
+
 .contact-form {
     background-color: rgba(255, 255, 255, 0.76);
     padding: 20px;
@@ -233,6 +240,12 @@ a {
 }
 .contact-form a:hover {
     color: #e5bcac;
+}
+.contact-picsello {
+    height: 920px;
+}
+@media screen and (max-width: 1674px) {
+    .contact-picsello {height: 750px;}
 }
 
 
@@ -464,6 +477,17 @@ beige: #ead6b8
     color: white;
     overflow: hidden;
     background: #b39082c7;
+
+}
+.instagram img {
+    width: 100vw;
+    height: auto;
+}
+@media all and (max-width: 680px) {
+    .instagram img{
+        width: auto;
+        height: 100px;
+    }
 }
 .insta-content {
     position: absolute;
